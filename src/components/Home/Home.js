@@ -84,21 +84,7 @@ const Home = () => {
       </div>
     );
 
-  if (!movies[0]) return (<div
-        style={{
-          color: "red",
-          fontSize: 35,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          fontFamily: "Abel",
-        }}
-      >
-        {" "}
-        No Movies Found 😥
-      </div>
-      );
+  if (!movies[0]) return <Spinner/>
 
   return (
     <div className="container">
