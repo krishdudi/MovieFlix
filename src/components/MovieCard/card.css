@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+a {
+  text-decoration: none;
+}
+
+.ima {
+  border: 5px solid #fff;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+.ima,
+.ima:hover {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ima:hover {
+  border: 5px solid #69c541 !important;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.movie-title {
+  margin-top: 0.25rem;
+font-family: 'Abel', sans-serif;
+  color: rgb(190, 236, 236);
+  font-size: 28px;
+}
+.movie-title:hover {
+  color: #919191;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 995px) {
+  .movie-title {
+    color: rgb(190, 236, 236);
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .movie-title {
+    color: rgb(190, 236, 236);
+    font-size: 13px !important;
+  }
+  .ima{
+      border: 3px solid #fff;
+  }
+}

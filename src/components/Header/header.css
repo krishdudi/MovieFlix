@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+.nav-logo {
+  color: #d60d0d !important;
+  font-size: 35px;
+  font-family: 'Capriola', sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+}
+.navbar {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.sticky {
+	position: sticky;
+	top: 0;
+	background-color: rgb(0, 0, 0);
+	z-index: 99;
+}
+@media screen and (max-width: 720px) {
+  .nav-logo{
+    margin-left: 8px;
+    font-size: 30px;
+  }
+  .navbar{
+    margin-bottom: -10px;
+  }
+}

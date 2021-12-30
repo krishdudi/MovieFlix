@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.popular{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.element{
+  margin: 0 65px 40px 0;
+  height: 100%;
+  max-width: 250px;
+  -webkit-animation: animateGrid 0.5s;
+  animation: animateGrid 0.5s;
+  overflow: hidden;
+  }
+
+h1{
+  font-size: 42px;
+  font-family: 'Abel', sans-serif;
+  color: rgb(238, 100, 20);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.element:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .popular {
+    grid-template-columns: auto auto;
+  }
+  .element:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popular {
+    grid-template-columns: auto auto;
+  }
+  .element {
+    margin: 0 10px 20px !important;
+  }
+}

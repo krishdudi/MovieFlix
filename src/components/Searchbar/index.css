@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.search-container{
+    /* margin-top: 40px; */
+  max-width: 520px;
+    width: 100%;
+    height: 35px;
+    background: #e9e2e2;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 40px;
+    position: relative;
+    color: rgb(36, 33, 33);
+    /* box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2); */
+  }
+    .fa-search {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      color: rgb(1, 5, 241);
+      z-index: 1000;
+    }
+    input {
+      font-family: 'Abel', sans-serif ;
+      font-size: 15px;
+      font-weight: 100;
+      position: absolute;
+      left: -5px;
+      margin: 8px 0;
+      padding: 0 0 0 60px;
+      border: 0;
+      width: 95%;
+      background: transparent;
+      height: 20px;
+      color: rgb(8, 8, 8);
+      box-sizing: border-box;
+    }
+    input:focus {
+      outline: none;
+  } 
+    @media screen and (max-width: 720px) {
+      input{
+        font-size: 15px;
+      }
+      
+    }
